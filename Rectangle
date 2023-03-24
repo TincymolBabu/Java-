@@ -1,0 +1,43 @@
+public class Rect
+
+{
+
+double len=12.48;
+
+float bre=13;
+
+void setdata()
+
+{
+
+System.out.println("length is :"+len);
+
+System.out.println("breadth is :"+bre);
+
+}
+
+void getarea()
+
+{
+
+double area;
+
+area=len*bre;
+
+System.out.println("area is:"+area);
+
+}
+
+public static void main(String args[])
+
+{
+
+Rect obj=new Rect();
+
+obj.setdata();
+
+obj.getarea();
+
+}
+
+}
