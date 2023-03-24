@@ -2,29 +2,30 @@ public class Rect
 
 {
 
-double len=12.48;
+double len;
 
-float bre=13;
+float bre;
 
 void setdata()
 
 {
-
+len=14.3;
+bre=13;
+System.out.println("area is");
 System.out.println("length is :"+len);
 
 System.out.println("breadth is :"+bre);
 
 }
 
-void getarea()
+double getarea()
 
 {
 
 double area;
 
 area=len*bre;
-
-System.out.println("area is:"+area);
+return area;
 
 }
 
@@ -36,7 +37,7 @@ Rect obj=new Rect();
 
 obj.setdata();
 
-obj.getarea();
+System.out.println("area is"+obj.getarea());
 
 }
 
