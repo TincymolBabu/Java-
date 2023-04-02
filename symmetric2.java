@@ -1,5 +1,5 @@
 import java.util.*;
-class symmetric
+class symmetric3
 {
 public static void main(String args[])
 {
@@ -37,11 +37,32 @@ break;
 }
 if(f==1)
 {
+System.out.println("transpose matrix is");
+for(i=0;i<cols;i++)
+{
+System.out.println(" ");
+for(j=0;j<rows;j++)
+{
+
+System.out.print(matrix[j][i]+" ");
+}
+}
 System.out.println("not symmetric");
 }
 else
 {
+System.out.println("transpose matrix is");
+for(i=0;i<cols;i++)
+{
+System.out.println(" ");
+for(j=0;j<rows;j++)
+{
+
+System.out.print(matrix[j][i]+" ");
+}
+}
 System.out.println("Symmetric");
+
 }
 }
 }
