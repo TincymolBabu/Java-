@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class student
 {
@@ -10,12 +11,17 @@ public class student
         int marks[] = new int[n];
         System.out.println("Enter marks out of 100:");
         for(int i = 0; i < n; i++)
-        {
+        {   
             marks[i] = s.nextInt();
+            while(marks[i]>100)
+            {
+            System.out.println("invalid");
+            marks[i] = s.nextInt();
+            }
             total = total + marks[i];
         }
         percentage = total / n;
         System.out.println("Sum:"+total);
-        System.out.println("Percentage:"+percentage);
+        System.out.println("Percentage:"+percentage +"%");
     }
 }
